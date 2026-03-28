@@ -1,0 +1,11 @@
+# Android
+android_app/build/
+android_app/.gradle/
+
+# C / Build artifacts
+c_core/build/
+*.o
+*.so
+
+# OS
+.DS_Store
