@@ -1,6 +1,7 @@
 # Android
 android_app/build/
 android_app/.gradle/
+android_app/local.properties
 
 # C / Build artifacts
 c_core/build/
@@ -9,3 +10,7 @@ c_core/build/
 
 # OS
 .DS_Store
+Thumbs.db
+
+# IDE
+.idea/
