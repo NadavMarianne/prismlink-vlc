@@ -1,7 +1,8 @@
 {
     "name": "PrismLink C Core",
     "dockerFile": "../Dockerfile",
-    "workspaceFolder": "/workspace",
+    "context": "..",
+    "workspaceFolder": "/workspaces/prismlink-vlc",
     "customizations": {
         "vscode": {
             "extensions": [
