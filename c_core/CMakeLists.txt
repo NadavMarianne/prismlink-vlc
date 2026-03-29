@@ -6,6 +6,7 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 
 add_library(prismlink
     src/color_map.c
+    src/protocol.c
 )
 
 target_include_directories(prismlink PUBLIC include)
