@@ -1,0 +1,5 @@
+{
+    "name": "PrismLink C Core",
+    "dockerFile": "../Dockerfile",
+    "workspaceFolder": "/workspace"
+}
