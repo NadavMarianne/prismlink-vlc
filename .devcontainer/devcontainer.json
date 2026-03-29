@@ -1,5 +1,12 @@
 {
     "name": "PrismLink C Core",
     "dockerFile": "../Dockerfile",
-    "workspaceFolder": "/workspace"
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools"
+            ]
+        }
+    }
 }
