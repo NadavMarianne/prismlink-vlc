@@ -9,7 +9,7 @@ static void push_to_queue(GenericQueue* queue, Frame* frame) {
     pthread_mutex_lock(&queue_mutex);
 
     // If full, we wait for Android to "ring the bell"
-    while (queue->count >= QUEUE_MAX_CAPACITY) {
+    while (queue->count >= queue->max_capacity) {
         // This is the "Flag". The thread stops here and uses 0% CPU.
         pthread_cond_wait(&can_resume_cond, &queue_mutex);
     }
