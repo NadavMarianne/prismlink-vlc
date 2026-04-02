@@ -29,7 +29,8 @@ target_include_directories(ds PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/lib/ds)
 # ==========================================
 # 3. ASSEMBLE THE PRODUCT (The src/ folder)
 # ==========================================
-add_executable(prismlink_app 
+add_executable(prismlink_app
+    src/main.c
     src/color_map.c
     src/protocol.h
 )
