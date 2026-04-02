@@ -9,6 +9,7 @@ typedef struct {
     int max_capacity;   // Maximum number of elements
     int front;
     int rear;
+    int count;
 } GenericQueue;
 
 // Prototypes
