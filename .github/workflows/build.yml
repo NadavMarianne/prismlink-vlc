@@ -2,9 +2,7 @@ name: Build C Core
 
 on:
   push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+    branches: ["**"]
 
 jobs:
   build:
@@ -16,10 +14,10 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y build-essential cmake gdb
-
-      - name: Build
+          sudo apt-get install -y build-essential cmake
+        
+      - name: Build and Test
         run: |
           cd c_core
-          cmake -B build
-          cmake --build build
+          chmod +x ./scripts/run_tests.sh
+          ./scripts/run_tests.sh
