@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h> // Required for memcpy
-#include "ds/generic_queue.h"
+#include "generic_queue.h"
 
 void initQueue(GenericQueue* q, void* buffer, int capacity, int item_size) {
     q->data = buffer;
